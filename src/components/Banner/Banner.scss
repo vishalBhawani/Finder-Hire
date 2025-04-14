@@ -1,0 +1,214 @@
+@use '../../scss/abstracts' as *;
+@use '../../scss/base' as *;
+
+
+
+.banner {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    padding-top: 92px;
+    background-image: url('../../assets/images/banner-1.png');
+
+
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 560px;
+
+    @include respond(sm) {
+        height: 100%;
+        min-height: 560px;
+        padding-top: 130px;
+    }
+
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25px 0 90.98px;
+        height: 100%;
+
+        @include respond(md) {
+            padding: 0 40px;
+        }
+
+        @include respond(sm) {
+            padding: 0 15px 40px 15px;
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 380px;
+
+        @include respond(md) {
+            min-width: 280px;
+        }
+
+        @include respond(sm) {
+            min-width: 100%;
+            text-align: center;
+            padding-top: 40px;
+            flex-flow: wrap;
+        }
+    }
+
+    &__title {
+        font-size: 64px;
+        font-weight: 600;
+        max-width: 560px;
+        line-height: 1.3;
+        text-transform: capitalize;
+
+        @include respond(xxl) {
+            font-size: 50px;
+        }
+
+        @include respond(xl) {
+            font-size: 45px;
+        }
+
+        @include respond(sm) {
+            font-size: 40px;
+        }
+    }
+
+    &__subtitle {
+        max-width: 560px;
+        font-size: 18px;
+        color: #545357;
+        font-weight: 400;
+        margin: 8px 0 40px;
+        font-family: "DM Sans", sans-serif;
+    }
+
+    &__cta {
+        color: #fff;
+        text-decoration: none;
+        max-width: 225px;
+        height: 64px;
+        font-size: 20px;
+        font-weight: 500;
+        background: #EE7231;
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        border-radius: 50px;
+        padding: 0 27px;
+        text-transform: capitalize;
+        transition: background 0.3s ease;
+
+        // optional: change background slightly on hover (can be removed if not needed)
+        &:hover {
+            background: #e1641e;
+        }
+
+        &:hover &__icon {
+            transform: translateX(6px);
+        }
+
+        @include respond(xl) {
+            font-size: 16px;
+        }
+
+        @include respond(sm) {
+
+            margin: 0 auto;
+        }
+
+        &__icon {
+            min-width: 32px;
+            width: 32px;
+            height: 32px;
+            min-height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    &__image-wrapper {
+        flex: 1;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+
+        @include respond(xxxl) {
+            max-width: 678px;
+
+        }
+
+        @include respond(xxl) {
+            max-width: 600px;
+        }
+
+        @include respond(xl) {
+            max-width: 500px;
+            padding-right: 34px;
+        }
+
+        @include respond(md) {
+            max-width: 500px;
+
+        }
+
+        @include respond(sm) {
+            max-width: 100%;
+            padding-right: 0px;
+        }
+    }
+
+    .left__shape {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+
+        svg {
+            width: 30px;
+
+            @include respond(sm) {
+                width: 15px;
+            }
+        }
+    }
+
+    .right__shape {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: -34px;
+        right: 0;
+        pointer-events: none;
+
+        svg {
+
+            @include respond(xxl) {
+                width: 150px;
+            }
+
+            @include respond(md) {
+                width: 100px;
+            }
+
+            @include respond(sm) {
+                width: 40px;
+            }
+        }
+    }
+}

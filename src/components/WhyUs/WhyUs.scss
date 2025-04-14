@@ -1,0 +1,157 @@
+@use '../../scss/abstracts' as *;
+@use '../../scss/base' as *;
+
+
+.whyus {
+    padding: 66px 0;
+
+    @include respond(sm) {
+        padding: 40px 15px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: center;
+        padding-right: 60px;
+
+        @include respond(xl) {
+            padding: 0 15px;
+        }
+
+        @include respond(sm) {
+            padding: 0px;
+        }
+
+
+    }
+
+    &__left {
+        flex: 1;
+        min-height: 400px;
+        overflow: hidden;
+
+        @include respond(sm) {
+            min-height: auto;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 0px 50px 50px 0;
+
+            @include respond(md) {
+                border-radius: 50px;
+            }
+
+            @include respond(sm) {
+                width: 100%;
+            }
+        }
+
+    }
+
+    &__right {
+        width: calc(100% - 660px);
+
+        @include respond(xl) {
+            width: calc(100% - 500px);
+        }
+
+        @include respond(md) {
+            width: calc(100% - 350px);
+        }
+
+        @include respond(sm) {
+            width: 100%;
+        }
+
+    }
+
+    &__heading {
+        margin-bottom: 34px;
+
+        .site-heading--main {
+
+            margin-bottom: 12px;
+        }
+
+        .site-des--main {
+            max-width: 538px;
+        }
+
+
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @include respond(sm) {
+            margin-top: 40px;
+        }
+
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        @include respond(sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__card {
+        background-color: #EEEFFF;
+        padding: 20px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        &--icon {
+            display: block;
+            width: 62px;
+            height: 62px;
+            margin-bottom: 10px;
+            background: #fff;
+            border-radius: 50%;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &--title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #101010;
+            margin-bottom: 10px;
+
+            @include respond(xl) {
+                font-size: 16px;
+            }
+        }
+
+        &--desc {
+            font-size: 14px;
+            color: #3A3A3A;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            line-height: 1.4;
+            // display: -webkit-box;
+            // -webkit-line-clamp: 3;
+            // -webkit-box-orient: vertical;
+            // overflow: hidden;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@use '../../scss/abstracts' as *;
+@use '../../scss/base' as *;
+
+
+.faq {
+    background-image: url('../../assets/images/faq.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 171px;
+
+    @include respond(sm) {
+        padding-bottom: 40px
+    }
+
+    &__container {
+        padding-top: 90px;
+
+        @include respond(sm) {
+            padding-top: 40px
+        }
+    }
+
+    .site-heading--main {
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+
+        @include respond(xl) {
+            font-size: 40px;
+        }
+
+        @include respond(sm) {
+            font-size: 36px;
+
+        }
+    }
+
+    .site-des--main {
+        font-family: "Roboto Flex", sans-serif;
+    }
+
+    &__list {
+        max-width: 955px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    &__item {
+        border: 1px solid #10101033;
+        padding: 14px 16px;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+
+
+    &__question {
+        background: none;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        position: relative;
+        color: #101010;
+        font-family: "DM Sans", sans-serif;
+
+        @include respond(sm) {
+            font-size: 16px;
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-image: url('../../assets/images/plus-icon.svg');
+
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease;
+        }
+
+        &[aria-expanded="true"]::after {
+
+            background-image: url('../../assets/images/minus-icon.svg');
+
+        }
+    }
+
+    &__answer {
+        max-height: 0;
+        overflow: hidden;
+        line-height: 1.5;
+        padding: 0 0;
+        font-size: 16px;
+        color: #333;
+        font-family: "Roboto Flex", sans-serif;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__question[aria-expanded="true"]+&__answer {
+        max-height: 500px;
+        padding: 12px 0 0;
+
+    }
+}
