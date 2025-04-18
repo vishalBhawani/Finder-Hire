@@ -1,24 +1,18 @@
 {
   "files": {
-    "main.css": "/Finder-Hire/static/css/main.90bbeaf2.chunk.css",
-    "main.js": "/Finder-Hire/static/js/main.4c924cb5.chunk.js",
-    "main.js.map": "/Finder-Hire/static/js/main.4c924cb5.chunk.js.map",
-    "runtime-main.js": "/Finder-Hire/static/js/runtime-main.a35d1e4d.js",
-    "runtime-main.js.map": "/Finder-Hire/static/js/runtime-main.a35d1e4d.js.map",
-    "static/js/2.46221016.chunk.js": "/Finder-Hire/static/js/2.46221016.chunk.js",
-    "static/js/2.46221016.chunk.js.map": "/Finder-Hire/static/js/2.46221016.chunk.js.map",
-    "index.html": "/Finder-Hire/index.html",
-    "precache-manifest.aee121ae816264b37b64d4502f8de6b8.js": "/Finder-Hire/precache-manifest.aee121ae816264b37b64d4502f8de6b8.js",
+    "main.css": "/Finder-Hire/static/css/main.04bf0993.css",
+    "main.js": "/Finder-Hire/static/js/main.22e4b643.js",
+    "static/media/banner-1.png": "/Finder-Hire/static/media/banner-1.bba1611df05c5d2170be.png",
+    "static/media/faq.png": "/Finder-Hire/static/media/faq.dda28d70d7db9c815ce4.png",
     "service-worker.js": "/Finder-Hire/service-worker.js",
-    "static/css/main.90bbeaf2.chunk.css.map": "/Finder-Hire/static/css/main.90bbeaf2.chunk.css.map",
-    "static/js/2.46221016.chunk.js.LICENSE.txt": "/Finder-Hire/static/js/2.46221016.chunk.js.LICENSE.txt",
-    "static/media/Banner.scss": "/Finder-Hire/static/media/banner-1.4006b328.png",
-    "static/media/Faq.scss": "/Finder-Hire/static/media/plus-icon.8c550e0c.svg"
+    "index.html": "/Finder-Hire/index.html",
+    "static/media/plus-icon.svg": "/Finder-Hire/static/media/plus-icon.d93e357e6bd3a310aff2.svg",
+    "static/media/minus-icon.svg": "/Finder-Hire/static/media/minus-icon.a62a965599ef0f3823b5.svg",
+    "main.04bf0993.css.map": "/Finder-Hire/static/css/main.04bf0993.css.map",
+    "main.22e4b643.js.map": "/Finder-Hire/static/js/main.22e4b643.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.a35d1e4d.js",
-    "static/js/2.46221016.chunk.js",
-    "static/css/main.90bbeaf2.chunk.css",
-    "static/js/main.4c924cb5.chunk.js"
+    "static/css/main.04bf0993.css",
+    "static/js/main.22e4b643.js"
   ]
 }
