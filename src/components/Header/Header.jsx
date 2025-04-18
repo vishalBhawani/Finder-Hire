@@ -66,7 +66,7 @@ const Header = () => {
                             <li className="nav__item"><a href="#" className="nav__link">Find & Hire</a></li>
                             <li className="nav__item"><a href="#" className="nav__link">About</a></li>
                             <li className="nav__item"><a href="#" className="nav__link">Blog</a></li>
-                            <li className="nav__item"><a href="#" className="nav__link">Contsssact</a></li>
+                            <li className="nav__item"><a href="#" className="nav__link">Contact</a></li>
                         </ul>
                         <a className="mobileView join__now " href="#" >Join Now</a>
                     </nav>
