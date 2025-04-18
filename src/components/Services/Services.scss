@@ -1,5 +1,6 @@
-@use '../../scss/abstracts' as *;
-@use '../../scss/base' as *;
+@use '../../scss/abstracts/mixins' as *;
+@use '../../scss/abstracts/breakpoints' as *;
+@use '../../scss/abstracts/variables' as *;
 
 .services {
     padding-top: 45px;
