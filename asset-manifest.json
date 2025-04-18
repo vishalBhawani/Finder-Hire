@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Finder-Hire/static/css/main.90bbeaf2.chunk.css",
+    "main.js": "/Finder-Hire/static/js/main.4c924cb5.chunk.js",
+    "main.js.map": "/Finder-Hire/static/js/main.4c924cb5.chunk.js.map",
+    "runtime-main.js": "/Finder-Hire/static/js/runtime-main.a35d1e4d.js",
+    "runtime-main.js.map": "/Finder-Hire/static/js/runtime-main.a35d1e4d.js.map",
+    "static/js/2.46221016.chunk.js": "/Finder-Hire/static/js/2.46221016.chunk.js",
+    "static/js/2.46221016.chunk.js.map": "/Finder-Hire/static/js/2.46221016.chunk.js.map",
+    "index.html": "/Finder-Hire/index.html",
+    "precache-manifest.aee121ae816264b37b64d4502f8de6b8.js": "/Finder-Hire/precache-manifest.aee121ae816264b37b64d4502f8de6b8.js",
+    "service-worker.js": "/Finder-Hire/service-worker.js",
+    "static/css/main.90bbeaf2.chunk.css.map": "/Finder-Hire/static/css/main.90bbeaf2.chunk.css.map",
+    "static/js/2.46221016.chunk.js.LICENSE.txt": "/Finder-Hire/static/js/2.46221016.chunk.js.LICENSE.txt",
+    "static/media/Banner.scss": "/Finder-Hire/static/media/banner-1.4006b328.png",
+    "static/media/Faq.scss": "/Finder-Hire/static/media/plus-icon.8c550e0c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a35d1e4d.js",
+    "static/js/2.46221016.chunk.js",
+    "static/css/main.90bbeaf2.chunk.css",
+    "static/js/main.4c924cb5.chunk.js"
+  ]
+}
